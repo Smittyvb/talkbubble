@@ -1,5 +1,8 @@
 (function ($) {
   $.fn.talkBubble = function (newText, aniFrame) {
+    if (aniFrame === undefined) {
+      aniFrame = 75;
+    }
     var text = "";
     var dispText = "";
     var currentIndex = 0;
