@@ -1,0 +1,20 @@
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="talkbubble.js"></script>
+<link rel="stylesheet" href="talkbubble.css" />
+<script>
+  //demo script
+  $(document).ready(function () {
+    $(".talkbubble").talkBubble("Hello. Type text in the textbox, to see it here.");
+    $("#render").click(function () {
+      $(".talkbubble").talkBubble($("#textbox").val());
+    });
+  });
+</script>
+
+<div class="talkbubble"></div>
+<br>
+<input type="text" id="textbox" />
+<button id="render">Display</button>
